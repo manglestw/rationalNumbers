@@ -5,6 +5,9 @@ class Rational(n: Int, d: Int) {
   val numer: Int = n / g
   val denom: Int = d / g
 
+
+  def this(n: Int) = this(n, 1)
+
   def canEqual(other: Any): Boolean = other.isInstanceOf[Rational]
 
   override def equals(other: Any): Boolean = other match {

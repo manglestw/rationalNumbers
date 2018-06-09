@@ -53,4 +53,9 @@ class RationalTest extends FunSuite with Matchers {
     rational.toString should be("1/2")
   }
 
+  test("should represent any number as rational with denominator 1"){
+    new Rational(3).toString should be("3/1")
+
+  }
+
 }
